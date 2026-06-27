@@ -577,11 +577,12 @@ svg {
 
 .agent-map {
   position: relative;
-  min-height: 225px;
+  min-height: 245px;
   border-radius: 18px;
   background:
     radial-gradient(circle, rgba(6, 182, 212, 0.16) 1px, transparent 1px) 0 0 / 13px 13px,
     rgba(236, 254, 255, 0.42);
+  overflow: hidden;
 }
 
 .agent-map::before,
@@ -592,12 +593,12 @@ svg {
 }
 
 .agent-map::before {
-  inset: 78px 45px 84px 45px;
+  inset: 78px 54px 94px 54px;
   border-radius: 12px;
 }
 
 .agent-map::after {
-  top: 112px;
+  top: 116px;
   left: 18%;
   width: 64%;
   height: 1px;
@@ -607,21 +608,26 @@ svg {
 .node {
   position: absolute;
   z-index: 1;
-  padding: 7px 12px;
+  box-sizing: border-box;
+  min-width: 64px;
+  padding: 7px 11px;
   border: 1px solid rgba(0, 98, 109, 0.35);
   border-radius: 10px;
   color: #07343a;
   background: rgba(224, 249, 250, 0.78);
   font-weight: 600;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.user { top: 18%; right: 12%; }
-.agent { top: 43%; left: 42%; }
-.memory { bottom: 26%; left: 28%; }
-.evals { bottom: 26%; right: 22%; }
-.mcp { bottom: 10%; right: 15%; }
-.audit { bottom: 9%; left: 36%; }
+.user { top: 18%; right: 11%; }
+.agent { top: 42%; left: 44%; }
+.memory { bottom: 31%; left: 25%; }
+.evals { bottom: 31%; right: 18%; }
+.mcp { bottom: 12%; right: 8%; min-width: 56px; }
+.audit { bottom: 12%; left: 28%; min-width: 82px; }
 
 .harness-card {
   min-height: 310px;

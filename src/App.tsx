@@ -337,7 +337,7 @@ function Hero() {
 
         <div className="hero-status">
           <span><i /> Building production AI systems with strong guardrails and great developer experience.</span>
-          <span>Bhubaneswar, India</span>
+          <span>Gurugram, Haryana, India</span>
           <span>2026</span>
         </div>
       </div>

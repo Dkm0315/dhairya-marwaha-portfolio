@@ -107,6 +107,70 @@ svg {
   background: #006b78;
 }
 
+.portfolio-sheet {
+  width: min(86vw, 380px) !important;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.62) !important;
+  border-radius: 22px 0 0 22px;
+  color: #07343a;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(255, 237, 190, 0.54), transparent 18rem),
+    radial-gradient(circle at 88% 24%, rgba(157, 211, 238, 0.58), transparent 20rem),
+    linear-gradient(160deg, rgba(240, 253, 252, 0.82), rgba(206, 233, 228, 0.72));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    -22px 0 70px rgba(4, 38, 42, 0.24);
+  backdrop-filter: blur(24px) saturate(150%);
+}
+
+.portfolio-sheet [data-slot="sheet-close"] {
+  top: 18px;
+  right: 18px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(7, 52, 58, 0.13);
+  border-radius: 12px;
+  color: #07343a;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.portfolio-sheet-header {
+  padding: 8px 52px 8px 8px;
+}
+
+.portfolio-sheet-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(7, 52, 58, 0.72);
+}
+
+.portfolio-sheet-links {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.portfolio-sheet-links a {
+  display: flex;
+  align-items: center;
+  min-height: 54px;
+  padding: 0 16px;
+  border: 1px solid rgba(7, 52, 58, 0.12);
+  border-radius: 16px;
+  color: #07343a;
+  background: rgba(255, 255, 255, 0.36);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.portfolio-sheet-links a:active {
+  transform: scale(0.99);
+  background: rgba(224, 249, 250, 0.68);
+}
+
 .hero-main-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.82fr) minmax(360px, 0.95fr);

@@ -258,13 +258,13 @@ function Hero() {
             >
               <Menu />
             </SheetTrigger>
-            <SheetContent side="right">
-              <SheetHeader>
-                <SheetTitle>Navigate</SheetTitle>
+            <SheetContent side="right" className="portfolio-sheet">
+              <SheetHeader className="portfolio-sheet-header">
+                <SheetTitle className="portfolio-sheet-title">Navigate</SheetTitle>
               </SheetHeader>
-              <div className="mt-8 flex flex-col gap-4">
+              <div className="portfolio-sheet-links">
                 {navItems.map((item) => (
-                  <a className="text-lg font-medium" href={item.href} key={item.label}>
+                  <a href={item.href} key={item.label}>
                     {item.label}
                   </a>
                 ))}
